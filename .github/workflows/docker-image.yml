@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Gateway Docker image
+      run: docker build . --file gateway/Tasky.Gateway/Dockerfile --tag gateway:dev
+    - name: Build the IdentityServer Docker image
+      run: docker build . --file apps/Tasky.IdentityServer/Dockerfile --tag identityserver:dev
+    - name: Build the Administration Docker image
+      run: docker build . --file services/administration/host/Tasky.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
+    - name: Build the IdentityService Docker image
+      run: docker build . --file services/identity/host/Tasky.IdentityService.HttpApi.Host/Dockerfile --tag identityservice:dev
+    - name: Build the SaaS Docker image
+      run: docker build . --file services/saas/host/Tasky.SaaSService.HttpApi.Host/Dockerfile --tag saas:dev
