@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Tasky.SaaSService.Domain.Shared": {
+      "path": "src/Tasky.SaaSService.Domain.Shared/Tasky.SaaSService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.Domain": {
+      "path": "src/Tasky.SaaSService.Domain/Tasky.SaaSService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.Application.Contracts": {
+      "path": "src/Tasky.SaaSService.Application.Contracts/Tasky.SaaSService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.Application": {
+      "path": "src/Tasky.SaaSService.Application/Tasky.SaaSService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.EntityFrameworkCore": {
+      "path": "src/Tasky.SaaSService.EntityFrameworkCore/Tasky.SaaSService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.MongoDB": {
+      "path": "src/Tasky.SaaSService.MongoDB/Tasky.SaaSService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.HttpApi": {
+      "path": "src/Tasky.SaaSService.HttpApi/Tasky.SaaSService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.HttpApi.Client": {
+      "path": "src/Tasky.SaaSService.HttpApi.Client/Tasky.SaaSService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.SaaSService.TestBase": {
+      "path": "test/Tasky.SaaSService.TestBase/Tasky.SaaSService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.SaaSService.EntityFrameworkCore.Tests": {
+      "path": "test/Tasky.SaaSService.EntityFrameworkCore.Tests/Tasky.SaaSService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.SaaSService.MongoDB.Tests": {
+      "path": "test/Tasky.SaaSService.MongoDB.Tests/Tasky.SaaSService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.SaaSService.Domain.Tests": {
+      "path": "test/Tasky.SaaSService.Domain.Tests/Tasky.SaaSService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.SaaSService.Application.Tests": {
+      "path": "test/Tasky.SaaSService.Application.Tests/Tasky.SaaSService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.SaaSService.HttpApi.Host": {
+      "path": "host/Tasky.SaaSService.HttpApi.Host/Tasky.SaaSService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Tasky.SaaSService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Tasky.SaaSService.HttpApi.Client.ConsoleTestApp/Tasky.SaaSService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.SaaSService.IdentityServer": {
+      "path": "host/Tasky.SaaSService.IdentityServer/Tasky.SaaSService.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "Tasky.SaaSService.Host.Shared": {
+      "path": "host/Tasky.SaaSService.Host.Shared/Tasky.SaaSService.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

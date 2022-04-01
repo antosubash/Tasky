@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Tasky.AdministrationService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <ProjectReference Include="..\Tasky.AdministrationService.EntityFrameworkCore.Tests\Tasky.AdministrationService.EntityFrameworkCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

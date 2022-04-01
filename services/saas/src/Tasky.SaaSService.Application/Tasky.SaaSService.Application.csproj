@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Tasky.SaaSService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="5.1.4" />
+    <ProjectReference Include="..\Tasky.SaaSService.Application.Contracts\Tasky.SaaSService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Tasky.SaaSService.Domain\Tasky.SaaSService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

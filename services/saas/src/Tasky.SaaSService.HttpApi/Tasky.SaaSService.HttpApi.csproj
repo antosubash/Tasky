@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Tasky.SaaSService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="5.1.4" />
+    <ProjectReference Include="..\Tasky.SaaSService.Application.Contracts\Tasky.SaaSService.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

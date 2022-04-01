@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "Tasky.AdministrationService": {
+      "path": "Tasky.AdministrationService.abpmdl.json"
+    }
+  }
+}
