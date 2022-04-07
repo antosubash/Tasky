@@ -10,7 +10,7 @@ public class ProjectServiceDbContext : AbpDbContext<ProjectServiceDbContext>, IP
     /* Add DbSet for each Aggregate Root here. Example:
      * public DbSet<Question> Questions { get; set; }
      */
-
+    public DbSet<Project> Projects { get; set; }
     public ProjectServiceDbContext(DbContextOptions<ProjectServiceDbContext> options)
         : base(options)
     {

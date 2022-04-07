@@ -41,6 +41,8 @@
     <ProjectReference Include="..\..\services\administration\src\Tasky.AdministrationService.EntityFrameworkCore\Tasky.AdministrationService.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\services\identity\src\Tasky.IdentityService.Application.Contracts\Tasky.IdentityService.Application.Contracts.csproj" />
     <ProjectReference Include="..\..\services\identity\src\Tasky.IdentityService.EntityFrameworkCore\Tasky.IdentityService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\services\project\src\Tasky.ProjectService.Application.Contracts\Tasky.ProjectService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\services\project\src\Tasky.ProjectService.EntityFrameworkCore\Tasky.ProjectService.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\services\saas\src\Tasky.SaaSService.Application.Contracts\Tasky.SaaSService.Application.Contracts.csproj" />
     <ProjectReference Include="..\..\services\saas\src\Tasky.SaaSService.EntityFrameworkCore\Tasky.SaaSService.EntityFrameworkCore.csproj" />
   </ItemGroup>

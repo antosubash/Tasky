@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Tasky.ProjectService.EntityFrameworkCore;
 
@@ -29,5 +30,13 @@ public static class ProjectServiceDbContextModelCreatingExtensions
             b.HasIndex(q => q.CreationTime);
         });
         */
+
+        builder.Entity<Project>(b =>
+        {
+            //Configure table & schema name
+            b.ToTable(ProjectServiceDbProperties.DbTablePrefix + "Projects", ProjectServiceDbProperties.DbSchema);
+
+            b.ConfigureByConvention();
+        });
     }
 }
