@@ -1,6 +1,9 @@
-﻿namespace Tasky.ProjectService;
+﻿using System;
+using Volo.Abp.Application.Dtos;
 
-public class ProjectDto
+namespace Tasky.ProjectService;
+
+public class ProjectDto : EntityDto<Guid>
 {
     public string Name { get; set; }
 }

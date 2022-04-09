@@ -8,7 +8,10 @@ public class ProjectServicePermissionDefinitionProvider : PermissionDefinitionPr
 {
     public override void Define(IPermissionDefinitionContext context)
     {
-        var myGroup = context.AddGroup(ProjectServicePermissions.GroupName, L("Permission:ProjectService"));
+        var projectGroup = context.AddGroup(ProjectServicePermissions.GroupName, L("Permission:ProjectService"));
+        var projectPermission = projectGroup.AddPermission(ProjectServicePermissions.Project.Default, L("Permission:ProjectService:Default"));
+        projectPermission.AddChild(ProjectServicePermissions.Project.Create);
+
     }
 
     private static LocalizableString L(string name)

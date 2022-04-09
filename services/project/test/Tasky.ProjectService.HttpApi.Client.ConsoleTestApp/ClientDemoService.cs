@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using IdentityModel.Client;
 using Microsoft.Extensions.Configuration;
-using Tasky.ProjectService.Samples;
+using Tasky.ProjectService;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.IdentityModel;
 
@@ -11,12 +11,12 @@ namespace Tasky.ProjectService;
 
 public class ClientDemoService : ITransientDependency
 {
-    private readonly ISampleAppService _sampleAppService;
+    private readonly IProjectAppService _sampleAppService;
     private readonly IIdentityModelAuthenticationService _authenticationService;
     private readonly IConfiguration _configuration;
 
     public ClientDemoService(
-        ISampleAppService sampleAppService,
+        IProjectAppService sampleAppService,
         IIdentityModelAuthenticationService authenticationService,
         IConfiguration configuration)
     {
@@ -41,11 +41,11 @@ public class ClientDemoService : ITransientDependency
         Console.WriteLine();
         Console.WriteLine($"***** {nameof(TestWithDynamicProxiesAsync)} *****");
 
-        var result = await _sampleAppService.GetAsync();
-        Console.WriteLine("Result: " + result.Value);
+        //var result = await _sampleAppService.GetAsync();
+        //Console.WriteLine("Result: " + result.Value);
 
-        result = await _sampleAppService.GetAuthorizedAsync();
-        Console.WriteLine("Result (authorized): " + result.Value);
+        //result = await _sampleAppService.GetAuthorizedAsync();
+        //Console.WriteLine("Result (authorized): " + result.Value);
     }
 
     /* Shows how to use HttpClient to perform a request to the HTTP API.

@@ -10,11 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\shared\Tasky.Shared.Hosting\Tasky.Shared.Hosting.csproj" />
+    <ProjectReference Include="..\..\..\..\shared\Tasky.Shared.Microservice.Hosting\Tasky.Shared.Microservice.Hosting.csproj" />
     <ProjectReference Include="..\..\src\Tasky.ProjectService.HttpApi\Tasky.ProjectService.HttpApi.csproj" />
     <ProjectReference Include="..\..\src\Tasky.ProjectService.Application\Tasky.ProjectService.Application.csproj" />
     <ProjectReference Include="..\..\src\Tasky.ProjectService.EntityFrameworkCore\Tasky.ProjectService.EntityFrameworkCore.csproj" />

@@ -7,7 +7,7 @@ namespace Tasky.ProjectService;
 
 [Area(ProjectServiceRemoteServiceConsts.ModuleName)]
 [RemoteService(Name = ProjectServiceRemoteServiceConsts.RemoteServiceName)]
-[Route("api/ProjectService")]
+[Route("api/project")]
 public class ProjectController : ProjectServiceController, IProjectAppService
 {
     private readonly IProjectAppService _projectService;

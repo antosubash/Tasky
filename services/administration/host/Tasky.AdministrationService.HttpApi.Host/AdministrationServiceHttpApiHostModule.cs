@@ -18,6 +18,7 @@ using Tasky.IdentityService;
 using Tasky.IdentityService.EntityFrameworkCore;
 using Tasky.SaaSService;
 using Tasky.SaaSService.EntityFrameworkCore;
+using Tasky.ProjectService;
 
 namespace Tasky.AdministrationService;
 
@@ -29,7 +30,8 @@ namespace Tasky.AdministrationService;
     typeof(IdentityServiceApplicationContractsModule),
     typeof(IdentityServiceEntityFrameworkCoreModule),
     typeof(SaaSServiceApplicationContractsModule),
-    typeof(SaaSServiceEntityFrameworkCoreModule)
+    typeof(SaaSServiceEntityFrameworkCoreModule),
+    typeof(ProjectServiceApplicationContractsModule)
     )]
 public class AdministrationServiceHttpApiHostModule : AbpModule
 {
