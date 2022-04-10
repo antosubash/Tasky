@@ -25,3 +25,8 @@ services:
   bindings:
     - protocol: https
       port: 7003
+- name: tasky-project-httpapi-host
+  project: services/project/host/Tasky.ProjectService.HttpApi.Host/Tasky.ProjectService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 7004
