@@ -2,6 +2,8 @@
 using Tasky.AdministrationService.EntityFrameworkCore;
 using Tasky.IdentityService;
 using Tasky.IdentityService.EntityFrameworkCore;
+using Tasky.ProjectService;
+using Tasky.ProjectService.EntityFrameworkCore;
 using Tasky.SaaSService;
 using Tasky.SaaSService.EntityFrameworkCore;
 using Volo.Abp.Autofac;
@@ -16,7 +18,9 @@ namespace Tasky.DbMigrator;
     typeof(IdentityServiceEntityFrameworkCoreModule),
     typeof(IdentityServiceApplicationContractsModule),
     typeof(SaaSServiceEntityFrameworkCoreModule),
-    typeof(SaaSServiceApplicationContractsModule)
+    typeof(SaaSServiceApplicationContractsModule),
+    typeof(ProjectServiceEntityFrameworkCoreModule),
+    typeof(ProjectServiceApplicationContractsModule)
     )]
 public class TaskyDbMigratorModule : AbpModule
 {

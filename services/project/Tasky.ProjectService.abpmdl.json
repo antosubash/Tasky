@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Tasky.ProjectService.Domain.Shared": {
+      "path": "src/Tasky.ProjectService.Domain.Shared/Tasky.ProjectService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.Domain": {
+      "path": "src/Tasky.ProjectService.Domain/Tasky.ProjectService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.Application.Contracts": {
+      "path": "src/Tasky.ProjectService.Application.Contracts/Tasky.ProjectService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.Application": {
+      "path": "src/Tasky.ProjectService.Application/Tasky.ProjectService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.EntityFrameworkCore": {
+      "path": "src/Tasky.ProjectService.EntityFrameworkCore/Tasky.ProjectService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.MongoDB": {
+      "path": "src/Tasky.ProjectService.MongoDB/Tasky.ProjectService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.HttpApi": {
+      "path": "src/Tasky.ProjectService.HttpApi/Tasky.ProjectService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.HttpApi.Client": {
+      "path": "src/Tasky.ProjectService.HttpApi.Client/Tasky.ProjectService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Tasky.ProjectService.TestBase": {
+      "path": "test/Tasky.ProjectService.TestBase/Tasky.ProjectService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.ProjectService.EntityFrameworkCore.Tests": {
+      "path": "test/Tasky.ProjectService.EntityFrameworkCore.Tests/Tasky.ProjectService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.ProjectService.MongoDB.Tests": {
+      "path": "test/Tasky.ProjectService.MongoDB.Tests/Tasky.ProjectService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.ProjectService.Domain.Tests": {
+      "path": "test/Tasky.ProjectService.Domain.Tests/Tasky.ProjectService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.ProjectService.Application.Tests": {
+      "path": "test/Tasky.ProjectService.Application.Tests/Tasky.ProjectService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.ProjectService.HttpApi.Host": {
+      "path": "host/Tasky.ProjectService.HttpApi.Host/Tasky.ProjectService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Tasky.ProjectService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Tasky.ProjectService.HttpApi.Client.ConsoleTestApp/Tasky.ProjectService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "Tasky.ProjectService.IdentityServer": {
+      "path": "host/Tasky.ProjectService.IdentityServer/Tasky.ProjectService.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "Tasky.ProjectService.Host.Shared": {
+      "path": "host/Tasky.ProjectService.Host.Shared/Tasky.ProjectService.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}
