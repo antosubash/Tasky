@@ -160,7 +160,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasky.ProjectService.HttpAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasky.ProjectService.TestBase", "services\project\test\Tasky.ProjectService.TestBase\Tasky.ProjectService.TestBase.csproj", "{CBB5D4AD-848F-4963-A610-E9CB7B61F921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasky.Shared.Microservice.Hosting", "shared\Tasky.Shared.Microservice.Hosting\Tasky.Shared.Microservice.Hosting.csproj", "{F5E002D0-009C-4C3E-97F4-6448649390CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasky.Shared.Microservice.Hosting", "shared\Tasky.Shared.Microservice.Hosting\Tasky.Shared.Microservice.Hosting.csproj", "{F5E002D0-009C-4C3E-97F4-6448649390CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
