@@ -257,3 +257,6 @@ host/Tasky.AdministrationService.HttpApi.Host/Logs/logs.txt
 host/Tasky.AdministrationService.Web.Host/Logs/logs.txt
 host/Tasky.AdministrationService.Web.Unified/Logs/logs.txt
 host/Tasky.AdministrationService.Blazor.Server.Host/Logs/logs.txt
+
+NDependOut/*
+*.ndproj

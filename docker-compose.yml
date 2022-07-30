@@ -1,0 +1,50 @@
+version: '3.4'
+
+services:
+  tasky.identityserver:
+    image: registry.antosubash.com/identityserver:dev
+    build:
+      context: .
+      dockerfile: apps/Tasky.IdentityServer/Dockerfile
+
+  tasky.gateway:
+    image: registry.antosubash.com/gateway:dev
+    build:
+      context: .
+      dockerfile: gateway/Tasky.Gateway/Dockerfile
+
+
+  tasky.administrationservice.httpapi.host:
+    image: registry.antosubash.com/administration:dev
+    build:
+      context: .
+      dockerfile: services/administration/host/Tasky.AdministrationService.HttpApi.Host/Dockerfile
+
+
+  tasky.identityservice.httpapi.host:
+    image: registry.antosubash.com/identityservice:dev
+    build:
+      context: .
+      dockerfile: services/identity/host/Tasky.IdentityService.HttpApi.Host/Dockerfile
+
+
+  tasky.projectservice.httpapi.host:
+    image: registry.antosubash.com/projectservice:dev
+    build:
+      context: .
+      dockerfile: services/project/host/Tasky.ProjectService.HttpApi.Host/Dockerfile
+
+
+  tasky.saasservice.httpapi.host:
+    image: registry.antosubash.com/saas:dev
+    build:
+      context: .
+      dockerfile: services/saas/host/Tasky.SaaSService.HttpApi.Host/Dockerfile
+
+
+  tasky.dbmigrator:
+    image: registry.antosubash.com/migrator:dev
+    build:
+      context: .
+      dockerfile: shared/Tasky.DbMigrator/Dockerfile
+
