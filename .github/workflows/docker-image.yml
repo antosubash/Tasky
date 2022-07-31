@@ -19,57 +19,57 @@ jobs:
       uses: docker/login-action@v1.14.1
       with:
         # Server address of Docker registry. If not set then will default to Docker Hub
-        registry: registry.antosubash.com
+        registry: registry.youtube.antosubash.com
         # Username used to log against the Docker registry
-        username: ${{ secrets.REGISTRY_USERNAME }}
+        username: ${{ secrets.REGISTRY_USERNAME_YOUTUBE }}
         # Password or personal access token used to log against the Docker registry
-        password: ${{ secrets.REGISTRY_PASSWORD }}
+        password: ${{ secrets.REGISTRY_PASSWORD_YOUTUBE }}
     - uses: actions/checkout@v2
     - name: Build the Gateway Docker image
       run: docker build . --file gateway/Tasky.Gateway/Dockerfile --tag gateway:dev
     - name: Docker tag images
-      run: docker tag gateway:dev registry.antosubash.com/gateway:dev
+      run: docker tag gateway:dev registry.youtube.antosubash.com/gateway:dev
     - name: Push Gateway image
-      run: docker push registry.antosubash.com/gateway:dev
+      run: docker push registry.youtube.antosubash.com/gateway:dev
       
     - name: Build the IdentityServer Docker image
       run: docker build . --file apps/Tasky.IdentityServer/Dockerfile --tag identityserver:dev
     - name: Docker tag IdentityServer images
-      run: docker tag identityserver:dev registry.antosubash.com/identityserver:dev
+      run: docker tag identityserver:dev registry.youtube.antosubash.com/identityserver:dev
     - name: Push IdentityServer image
-      run: docker push registry.antosubash.com/identityserver:dev
+      run: docker push registry.youtube.antosubash.com/identityserver:dev
   
     - name: Build the Administration Docker image
       run: docker build . --file services/administration/host/Tasky.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
     - name: Docker tag Administration images
-      run: docker tag administration:dev registry.antosubash.com/administration:dev
+      run: docker tag administration:dev registry.youtube.antosubash.com/administration:dev
     - name: Push Administration image
-      run: docker push registry.antosubash.com/administration:dev
+      run: docker push registry.youtube.antosubash.com/administration:dev
       
     - name: Build the IdentityService Docker image
       run: docker build . --file services/identity/host/Tasky.IdentityService.HttpApi.Host/Dockerfile --tag identityservice:dev
     - name: Docker tag identityservice images
-      run: docker tag identityservice:dev registry.antosubash.com/identityservice:dev
+      run: docker tag identityservice:dev registry.youtube.antosubash.com/identityservice:dev
     - name: Push IdentityService image
-      run: docker push registry.antosubash.com/identityservice:dev
+      run: docker push registry.youtube.antosubash.com/identityservice:dev
     
     - name: Build the SaaS Docker image
       run: docker build . --file services/saas/host/Tasky.SaaSService.HttpApi.Host/Dockerfile --tag saas:dev
     - name: Docker tag SaaS images
-      run: docker tag saas:dev registry.antosubash.com/saas:dev
+      run: docker tag saas:dev registry.youtube.antosubash.com/saas:dev
     - name: Push SaaS image
-      run: docker push registry.antosubash.com/saas:dev
+      run: docker push registry.youtube.antosubash.com/saas:dev
       
     - name: Build the Projects Docker image
       run: docker build . --file services/project/host/Tasky.ProjectService.HttpApi.Host/Dockerfile --tag project:dev
     - name: Docker tag Projects images
-      run: docker tag project:dev registry.antosubash.com/project:dev
+      run: docker tag project:dev registry.youtube.antosubash.com/project:dev
     - name: Push Projects image
-      run: docker push registry.antosubash.com/project:dev
+      run: docker push registry.youtube.antosubash.com/project:dev
 
     - name: Build the DbMigrator Docker image
       run: docker build . --file shared/Tasky.DbMigrator/Dockerfile --tag migrator:dev
     - name: Docker tag DbMigrator images
-      run: docker tag migrator:dev registry.antosubash.com/migrator:dev
+      run: docker tag migrator:dev registry.youtube.antosubash.com/migrator:dev
     - name: Push DbMigrator image
-      run: docker push registry.antosubash.com/migrator:dev
+      run: docker push registry.youtube.antosubash.com/migrator:dev
