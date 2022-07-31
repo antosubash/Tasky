@@ -40,7 +40,7 @@ jobs:
       run: docker push registry.antosubash.com/identityserver:dev
   
     - name: Build the Administration Docker image
-      run: docker build . --file services/administration/host/Tasky.Administration.HttpApi.Host/Dockerfile --tag administration:dev
+      run: docker build . --file services/administration/host/Tasky.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
     - name: Docker tag Administration images
       run: docker tag administration:dev registry.antosubash.com/administration:dev
     - name: Push Administration image
@@ -54,11 +54,18 @@ jobs:
       run: docker push registry.antosubash.com/identityservice:dev
     
     - name: Build the SaaS Docker image
-      run: docker build . --file services/saas/host/Tasky.SaaS.HttpApi.Host/Dockerfile --tag saas:dev
+      run: docker build . --file services/saas/host/Tasky.SaaSService.HttpApi.Host/Dockerfile --tag saas:dev
     - name: Docker tag SaaS images
       run: docker tag saas:dev registry.antosubash.com/saas:dev
     - name: Push SaaS image
       run: docker push registry.antosubash.com/saas:dev
+      
+    - name: Build the Projects Docker image
+      run: docker build . --file services/project/host/Tasky.ProjectService.HttpApi.Host/Dockerfile --tag project:dev
+    - name: Docker tag Projects images
+      run: docker tag project:dev registry.antosubash.com/project:dev
+    - name: Push Projects image
+      run: docker push registry.antosubash.com/project:dev
 
     - name: Build the DbMigrator Docker image
       run: docker build . --file shared/Tasky.DbMigrator/Dockerfile --tag migrator:dev
