@@ -14,7 +14,7 @@ WORKDIR "/src/gateway/Tasky.Gateway"
 RUN dotnet build "Tasky.Gateway.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Tasky.Gateway.csproj" -c Release -o /app/publish
+RUN dotnet publish "Tasky.Gateway.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
