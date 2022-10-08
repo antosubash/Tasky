@@ -29,7 +29,7 @@ using Volo.Abp.UI.Navigation.Urls;
 namespace Tasky;
 
 [DependsOn(
-typeof(AbpAccountWebIdentityServerModule),
+typeof(AbpAccountWebOpenIddictModule),
 typeof(AbpAccountApplicationModule),
 typeof(AbpAccountHttpApiModule),
 typeof(AbpAspNetCoreMvcUiBasicThemeModule),
@@ -38,7 +38,7 @@ typeof(SaaSServiceEntityFrameworkCoreModule),
 typeof(IdentityServiceEntityFrameworkCoreModule),
 typeof(TaskyHostingModule)
     )]
-public class TaskyIdentityServerModule : AbpModule
+public class TaskyOpenIddictModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
@@ -136,7 +136,7 @@ public class TaskyIdentityServerModule : AbpModule
         app.UseMultiTenancy();
 
         app.UseUnitOfWork();
-        app.UseIdentityServer();
+        // app.UseOpenIddict();
         app.UseAuthorization();
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();

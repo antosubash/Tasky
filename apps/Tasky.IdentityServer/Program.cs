@@ -19,12 +19,12 @@ public class Program
 
         try
         {
-            Log.Information("Starting Tasky.IdentityServer.");
+            Log.Information("Starting Tasky.OpenIddict.");
             var builder = WebApplication.CreateBuilder(args);
             builder.Host.AddAppSettingsSecretsJson()
                 .UseAutofac()
                 .UseSerilog();
-            await builder.AddApplicationAsync<TaskyIdentityServerModule>();
+            await builder.AddApplicationAsync<TaskyOpenIddictModule>();
             var app = builder.Build();
             await app.InitializeApplicationAsync();
             await app.RunAsync();
@@ -32,7 +32,7 @@ public class Program
         }
         catch (Exception ex)
         {
-            Log.Fatal(ex, "Tasky.IdentityServer terminated unexpectedly!");
+            Log.Fatal(ex, "Tasky.OpenIddict terminated unexpectedly!");
             return 1;
         }
         finally

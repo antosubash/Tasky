@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
 
@@ -8,11 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="5.1.4" />
-    <PackageReference Include="Volo.Abp.TenantManagement.EntityFrameworkCore" Version="5.1.4" />
-	  <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="5.1.4"/>
-	  <PackageReference Include="Volo.Abp.EntityFrameworkCore.PostgreSql" Version="5.1.4"/>
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1"/>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.EntityFrameworkCore" Version="6.0.0" />
+	  <PackageReference Include="Volo.Abp.EntityFrameworkCore.PostgreSql" Version="6.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />
     <ProjectReference Include="..\Tasky.SaaSService.Domain\Tasky.SaaSService.Domain.csproj" />
   </ItemGroup>
 
