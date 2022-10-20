@@ -164,12 +164,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasky.Shared.Microservice.H
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E8E3594C-AB25-4419-9231-76690E50B329}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{5BF59485-FB5F-4B42-ADFA-1FF9FA636A36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BF59485-FB5F-4B42-ADFA-1FF9FA636A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF59485-FB5F-4B42-ADFA-1FF9FA636A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80798DC5-1329-414C-8F9E-7ACC7641A264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{80798DC5-1329-414C-8F9E-7ACC7641A264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80798DC5-1329-414C-8F9E-7ACC7641A264}.Release|Any CPU.ActiveCfg = Release|Any CPU
