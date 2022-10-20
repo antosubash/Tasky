@@ -1,0 +1,6 @@
+# configuration file for dotnet-releaser
+[msbuild]
+project = "Tasky.sln"
+[github]
+user = "antosubash"
+repo = "Tasky"
