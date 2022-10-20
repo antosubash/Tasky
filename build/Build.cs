@@ -102,5 +102,6 @@ class Build : NukeBuild
             Log.Information("GitVersion = {Value}", GitVersion.MajorMinorPatch);
             Log.Information("Solution path = {Value}", Solution);
             Log.Information("Solution directory = {Value}", Solution.Directory);
+            Log.Information("Version = {Value}", GitVersion.SemVer);
         });
 }
