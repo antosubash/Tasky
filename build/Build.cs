@@ -3,6 +3,8 @@ using Nuke.Common.Git;
 using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tools.DotNet;
+using Nuke.Common.Tooling;
+using Nuke.Common.Tools.GitHub;
 using Nuke.Common.Tools.GitVersion;
 using Nuke.Common.Tools.Xunit;
 using Nuke.Common.Utilities.Collections;
@@ -10,6 +12,9 @@ using Serilog;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.IO.PathConstruction;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
+using static Nuke.Common.ChangeLog.ChangelogTasks;
+using static Nuke.Common.Tools.Git.GitTasks;
+using static Nuke.Common.Tools.GitVersion.GitVersionTasks;
 class Build : NukeBuild
 {
     /// Support plugins are available for:
@@ -98,5 +103,4 @@ class Build : NukeBuild
             Log.Information("Solution path = {Value}", Solution);
             Log.Information("Solution directory = {Value}", Solution.Directory);
         });
-
 }
