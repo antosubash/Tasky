@@ -63,6 +63,7 @@ class Build : NukeBuild
                 .SetProjectFile(Solution)
                 .EnableNoLogo()
                 .EnableNoRestore()
+                .SetVersion(GitVersion.NuGetVersionV2)
                 .SetAssemblyVersion(GitVersion.AssemblySemVer)
                 .SetFileVersion(GitVersion.AssemblySemFileVer)
                 .SetInformationalVersion(GitVersion.InformationalVersion));
@@ -70,17 +71,17 @@ class Build : NukeBuild
 
 
     Target Pack => _ => _
-    .DependsOn(Clean, Compile)
-    .Produces(ArtifactsDirectory)
-    .Executes(() =>
-    {
-        DotNetPack(c => c
-            .SetProject(Solution)
-            .SetConfiguration(Configuration)
-            .SetVersion(GitVersion.NuGetVersionV2)
-            .SetOutputDirectory(ArtifactsDirectory)
-            .SetNoBuild(true));
-    });
+        .DependsOn(Clean, Compile)
+        .Produces(ArtifactsDirectory)
+        .Executes(() =>
+        {
+            DotNetPack(c => c
+                .SetProject(Solution)
+                .SetConfiguration(Configuration)
+                .SetVersion(GitVersion.NuGetVersionV2)
+                .SetOutputDirectory(ArtifactsDirectory)
+                .SetNoBuild(true));
+        });
 
     Target Print => _ => _
         .Executes(() =>
@@ -103,5 +104,6 @@ class Build : NukeBuild
             Log.Information("Solution path = {Value}", Solution);
             Log.Information("Solution directory = {Value}", Solution.Directory);
             Log.Information("Version = {Value}", GitVersion.SemVer);
+            Log.Information("NuGetVersion = {Value}", GitVersion.NuGetVersion);
         });
 }
