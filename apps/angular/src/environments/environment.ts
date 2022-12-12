@@ -5,22 +5,22 @@ const baseUrl = 'http://localhost:4200';
 export const environment = {
   production: false,
   application: {
-    baseUrl: 'http://localhost:4200/',
+    baseUrl,
     name: 'Tasky',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:7000',
+    issuer: 'https://localhost:44321/',
     redirectUri: baseUrl,
     clientId: 'Tasky_App',
     responseType: 'code',
-    scope: 'offline_access IdentityService AdministrationService SaaSService role email openid profile',
-    requireHttps: true
+    scope: 'offline_access Tasky',
+    requireHttps: true,
   },
   apis: {
     default: {
-      url: 'https://localhost:7500',
+      url: 'https://localhost:44354',
       rootNamespace: 'Tasky',
-    }
+    },
   },
 } as Environment;
