@@ -95,7 +95,7 @@
     "@abp/ng.theme.shared" "~6.0.2"
     tslib "^2.0.0"
 
-"@abp/ng.theme.lepton-x@^1.0.2":
+"@abp/ng.theme.lepton-x@~1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@abp/ng.theme.lepton-x/-/ng.theme.lepton-x-1.0.2.tgz#40941f582b2063cb121625ec374b5218b8e5c250"
   integrity sha512-b/SokToeITfU04vQ0ZrRVsRZW8Qwl12lt1jDFHtZigLTHfzU0Wf+bDgsysuCTF9dzyYxpGGjDBWQCkitZ0c36A==
