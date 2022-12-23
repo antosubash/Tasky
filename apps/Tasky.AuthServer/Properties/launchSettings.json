@@ -18,7 +18,7 @@
     "Tasky.AuthServer": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7600;http://localhost:7600",
+      "applicationUrl": "https://localhost:7600;http://localhost:7601",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
