@@ -1,10 +1,10 @@
 name: tasky
 services:
-- name: tasky-identityserver
-  project: apps/Tasky.IdentityServer/Tasky.IdentityServer.csproj
-  bindings:
-    - protocol: https
-      port: 7000
+# - name: tasky-identityserver
+#   project: apps/Tasky.IdentityServer/Tasky.IdentityServer.csproj
+#   bindings:
+#     - protocol: https
+#       port: 7000
 - name: tasky-gateway
   project: gateway/Tasky.Gateway/Tasky.Gateway.csproj
   bindings:
