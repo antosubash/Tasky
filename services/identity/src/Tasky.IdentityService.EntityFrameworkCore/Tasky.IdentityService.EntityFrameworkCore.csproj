@@ -11,7 +11,6 @@
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="6.0.2" />
     <PackageReference Include="Volo.Abp.Identity.EntityFrameworkCore" Version="6.0.2" />
     <PackageReference Include="Volo.Abp.IdentityServer.EntityFrameworkCore" Version="6.0.2" />
-	  <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="6.0.2" />
 	  <PackageReference Include="Volo.Abp.EntityFrameworkCore.PostgreSql" Version="6.0.2" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />
     <ProjectReference Include="..\Tasky.IdentityService.Domain\Tasky.IdentityService.Domain.csproj" />

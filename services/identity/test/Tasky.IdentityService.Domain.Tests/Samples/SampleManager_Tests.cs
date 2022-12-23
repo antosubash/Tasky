@@ -12,9 +12,9 @@ public class SampleManager_Tests : IdentityServiceDomainTestBase
         //_sampleManager = GetRequiredService<SampleManager>();
     }
 
-    [Fact]
-    public async Task Method1Async()
-    {
+    // [Fact]
+    // public async Task Method1Async()
+    // {
 
-    }
+    // }
 }
