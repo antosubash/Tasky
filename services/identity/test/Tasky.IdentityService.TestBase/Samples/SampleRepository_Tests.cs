@@ -18,9 +18,9 @@ public abstract class SampleRepository_Tests<TStartupModule> : IdentityServiceTe
         //_sampleRepository = GetRequiredService<ISampleRepository>();
     }
 
-    [Fact]
-    public async Task Method1Async()
-    {
+    // [Fact]
+    // public async Task Method1Async()
+    // {
 
-    }
+    // }
 }
